@@ -1,0 +1,84 @@
+html,
+body {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Euclid Circular A", "Poppins";
+}
+
+nav {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #131114;
+  padding: 0 8px;
+}
+
+button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  color: #f9f9f9;
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: transparent;
+}
+
+button.active {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+h2 {
+  color: #f9f9f9;
+  margin: 0 0 6px;
+  width: 100%;
+}
+
+p {
+  color: #f9f9f9;
+  margin-bottom: 0;
+}
+
+.carousel-root {
+  width: 100vw;
+  height: 100vh;
+}
+
+.carousel-slider,
+.slider-wrapper,
+.slider {
+  height: 100%;
+}
+
+.slider li {
+  display: flex;
+  cursor: grab;
+}
+
+.slider li div {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15%;
+  text-align: left;
+}
+
+.carousel .slide {
+  min-height: 100vh;
+}
