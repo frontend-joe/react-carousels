@@ -9,6 +9,7 @@ body {
 
 body {
   margin: 0;
+  background: #f8f8f8;
   font-family: "Euclid Circular A", "Poppins";
 }
 
@@ -17,12 +18,26 @@ nav {
   z-index: 1;
   top: 0;
   left: 0;
-  height: 100%;
+  width: 100%;
+  height: 72px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   background: #131114;
   padding: 0 8px;
+}
+
+h1 {
+  color: #f9f9f9;
+  padding-left: 20px;
+  font-weight: 500;
+}
+
+nav .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
 }
 
 button {
@@ -43,14 +58,22 @@ button.active {
 }
 
 h2 {
-  color: #f9f9f9;
+  color: #1a1a1a;
   margin: 0 0 6px;
   width: 100%;
 }
 
 p {
-  color: #f9f9f9;
+  color: #545454;
   margin-bottom: 0;
+}
+
+.carousel .slide img {
+  width: 250px;
+  margin-bottom: 60px;
+  padding: 40px;
+  border-radius: 20px;
+  background: #ffffff;
 }
 
 .carousel-root {
@@ -73,7 +96,7 @@ p {
   flex: 1 1 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   padding: 0 15%;
   text-align: left;

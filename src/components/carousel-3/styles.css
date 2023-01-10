@@ -1,0 +1,50 @@
+html,
+body {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  margin: 50% 0;
+}
+
+body {
+  margin: 0;
+  padding-left: 10px;
+  background: #eaedf0;
+}
+
+img {
+  height: 30vw;
+  width: 30vw;
+  object-fit: cover;
+}
+
+.swiper {
+  cursor: grab;
+}
+
+.swiper::before,
+.swiper::after {
+  z-index: 2;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  translate: -50% 0;
+  width: 800vw;
+  height: 800vw;
+  background: #eaedf0;
+  border-radius: 50%;
+}
+
+.swiper::before {
+  top: -795vw;
+}
+
+.swiper::after {
+  bottom: -795vw;
+}
