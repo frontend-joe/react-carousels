@@ -1,0 +1,68 @@
+html,
+body {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #f4f0fa;
+  color: #f9f9f9;
+  font-family: Poppins, "Euclid Circular A";
+}
+
+:root {
+  --height: 420px;
+}
+
+.wrapper {
+  position: relative;
+  height: var(--height);
+  margin-top: 30px;
+  overflow-x: hidden;
+}
+
+.splide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(125vw + 30px);
+}
+
+.slide {
+  padding: 0 0 0 30px;
+}
+
+nav {
+  background: #ffffff;
+  color: #222222;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+  font-weight: 600;
+  font-size: 18px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: #8f44fd;
+  height: var(--height);
+  padding: 60px 40px;
+  border-radius: 10px;
+}
+
+.material-symbols-outlined {
+  font-size: 40px;
+  background: rgb(255 255 255 / 12%);
+  border-radius: 50%;
+  padding: 16px;
+}
