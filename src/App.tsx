@@ -1,4 +1,4 @@
-import { Carousel } from "./components/carousel-4/Carousel";
+import { Carousel } from "./components/carousel-5/Carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 function App() {
